@@ -1,9 +1,8 @@
 #include "src/Potentiometer.h"
 
 // Teensy 2.0 has the LED on pin 11
-// Teensy++ 2.0 has the LED on pin 6
-// Teensy 3.x / Teensy LC have the LED on pin 13
 const int ledPin = 11;
+Potentiometer p0 { 0, 7, 0 };
 
 // the setup() method runs once, when the sketch starts
 
@@ -22,13 +21,17 @@ int prop(int val) {
 int last_val = 0;
 
 void loop() {
+  if(p0.read())
+    Serial.println(p0.get_value());
+
+  /*
   int val = prop(analogRead(0));
   Serial.println(val);
   if(val != last_val) {
     usbMIDI.sendControlChange(7, val, 0);
     val = last_val;
   }
-  
+  */
   // MIDI Controllers should discard incoming MIDI messages.
   while (usbMIDI.read()) {
   }

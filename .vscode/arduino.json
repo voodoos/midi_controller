@@ -1,0 +1,7 @@
+{
+    "board": "arduino:avr:teensy2",
+    "configuration": "usb=midi,speed=16,keys=en-us",
+    "programmer": "AVR ISP",
+    "sketch": "midi_controller.ino",
+    "port": "COM10"
+}
