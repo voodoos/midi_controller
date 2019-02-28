@@ -21,8 +21,10 @@ int prop(int val) {
 int last_val = 0;
 
 void loop() {
-  if(p0.read())
+  if(p0.read()) {
     Serial.println(p0.get_value());
+    p0.send();
+  }
 
   /*
   int val = prop(analogRead(0));

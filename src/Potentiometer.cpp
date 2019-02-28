@@ -1,6 +1,6 @@
 #include "Potentiometer.h"
 
-Potentiometer::Potentiometer(int p, byte co, byte ch) :
+Potentiometer::Potentiometer(uint8_t p, uint8_t co, uint8_t ch) :
    pin { p }, control (co), channel ( ch ) {}
 
 bool Potentiometer::read() {
@@ -14,6 +14,10 @@ bool Potentiometer::read() {
     return false;
 }
 
-int Potentiometer::get_value() const {
+uint8_t Potentiometer::get_value() const {
     return value;
+}
+
+void Potentiometer::send() const {
+    usbMIDI.sendControlChange(control, value, channel);
 }
