@@ -2,11 +2,12 @@
 
 // Teensy 2.0 has the LED on pin 11
 const int ledPin = 11;
-Potentiometer p0 { 0, 7, 0 };
+Potentiometer p0{0, 7, 0};
 
 // the setup() method runs once, when the sketch starts
 
-void setup() {
+void setup()
+{
   // initialize the digital pin as an output.
   pinMode(ledPin, OUTPUT);
 }
@@ -14,14 +15,17 @@ void setup() {
 // the loop() methor runs over and over again,
 // as long as the board has power
 
-int prop(int val) {
- return (127.0 * analogRead(0)) / 1023.0;
+int prop(int val)
+{
+  return (127.0 * analogRead(0)) / 1023.0;
 }
 
 int last_val = 0;
 
-void loop() {
-  if(p0.read()) {
+void loop()
+{
+  if (p0.read())
+  {
     Serial.println(p0.get_value());
     p0.send();
   }
@@ -35,7 +39,8 @@ void loop() {
   }
   */
   // MIDI Controllers should discard incoming MIDI messages.
-  while (usbMIDI.read()) {
+  while (usbMIDI.read())
+  {
   }
   //digitalWrite(ledPin, HIGH);   // set the LED on
   //delay(50);                  // wait for a second

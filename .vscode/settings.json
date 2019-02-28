@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/ulysse/.platformio/penv/bin:/Users/ulysse/.platformio/penv:/Users/ulysse/.rvm/gems/ruby-2.4.1/bin:/Users/ulysse/.rvm/gems/ruby-2.4.1@global/bin:/Users/ulysse/.rvm/rubies/ruby-2.4.1/bin:/Users/ulysse/perl5/bin:/Users/ulysse/.yarn/bin:/Users/ulysse/.config/yarn/global/node_modules/.bin:/Users/ulysse/.opam/4.07.0/bin:/Users/ulysse/miniconda3/bin:/Users/ulysse/.nexustools:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ulysse/.opam/4.02.1/bin:/usr/local/smlnj/bin:/usr/local/texlive/2016/bin/x86_64-darwin:/Users/ulysse/ens2017/cling/cling-build/bin:/Users/ulysse/tools/bin:/Users/ulysse/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Users/ulysse/.rvm/bin",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
